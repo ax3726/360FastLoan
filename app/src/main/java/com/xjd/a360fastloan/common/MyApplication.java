@@ -18,7 +18,7 @@ import com.xjd.a360fastloan.R;
 
 
 /**
- * Created by Administrator on 2017/11/22 0022.
+ * Created by lm on 2019/6/17
  */
 
 public class MyApplication extends ThisApplication {

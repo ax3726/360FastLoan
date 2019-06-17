@@ -1,7 +1,7 @@
 package com.xjd.a360fastloan.common;
 
 /**
- * Created by Administrator on 2017/9/21.
+ * Created by lm on 2019/6/17
  */
 
 public class Link {
