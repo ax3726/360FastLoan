@@ -2,6 +2,7 @@ package com.xjd.a360fastloan.ui.mian;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.lm.lib_common.base.BaseActivity;
 import com.lm.lib_common.base.BasePresenter;
@@ -23,5 +24,16 @@ public class LoginActivity extends BaseActivity<BasePresenter, ActivityLoginBind
     @Override
     protected BasePresenter createPresenter() {
         return null;
+    }
+
+    @Override
+    protected void initEvent() {
+        super.initEvent();
+        mBinding.btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(MainActivity.class);
+            }
+        });
     }
 }
