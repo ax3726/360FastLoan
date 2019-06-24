@@ -20,4 +20,16 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
     protected BaseFragmentPresenter createPresenter() {
         return null;
     }
+
+    @Override
+    protected boolean isTitleBar() {
+        return true;
+    }
+
+    @Override
+    protected void initTitleBar() {
+        super.initTitleBar();
+        mTitleBarLayout.setLeftShow(false);
+        mTitleBarLayout.setTitle("360极速借");
+    }
 }
