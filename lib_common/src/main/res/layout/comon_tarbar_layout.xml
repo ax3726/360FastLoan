@@ -6,13 +6,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorWhite">
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
 
         <View
             android:id="@+id/view_head"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/head_top"/>
+            android:layout_height="@dimen/head_top" />
 
         <LinearLayout
             android:id="@+id/lly_head"
@@ -29,8 +29,8 @@
 
                 <ImageView
                     android:id="@+id/id_leftBtnImg"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     android:src="@drawable/back" />
             </LinearLayout>
 
@@ -87,6 +87,12 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <View
+            android:id="@+id/vie_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E2E5E9" />
     </LinearLayout>
 
 </layout>
