@@ -6,15 +6,15 @@ import android.view.View;
 import com.lm.lib_common.base.BaseActivity;
 import com.lm.lib_common.base.BasePresenter;
 import com.xjd.a360fastloan.R;
-import com.xjd.a360fastloan.databinding.ActivityAddBankCardBinding;
+import com.xjd.a360fastloan.databinding.ActivityAddIdCardBinding;
 import com.xjd.a360fastloan.widget.dialog.BackDialog;
 
-public class AddBankCardActivity extends BaseActivity<BasePresenter, ActivityAddBankCardBinding> {
+public class AddIdCardActivity extends BaseActivity<BasePresenter, ActivityAddIdCardBinding> {
 
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_add_bank_card;
+        return R.layout.activity_add_id_card;
     }
 
     @Override

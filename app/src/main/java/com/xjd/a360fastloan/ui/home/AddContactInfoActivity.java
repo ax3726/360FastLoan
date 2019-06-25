@@ -2,6 +2,7 @@ package com.xjd.a360fastloan.ui.home;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.lm.lib_common.base.BaseActivity;
 import com.lm.lib_common.base.BasePresenter;
@@ -20,9 +21,21 @@ public class AddContactInfoActivity extends BaseActivity<BasePresenter, Activity
     protected BasePresenter createPresenter() {
         return null;
     }
+
     @Override
     protected void initTitleBar() {
         super.initTitleBar();
         mTitleBarLayout.setTitle("联系人信息");
+    }
+
+    @Override
+    protected void initEvent() {
+        super.initEvent();
+        mBinding.btnTurn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(AffirmBankActivity.class);
+            }
+        });
     }
 }

@@ -42,7 +42,7 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
         mBinding.btnLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(AddBankCardActivity.class);
+                startActivity(AddIdCardActivity.class);
             }
         });
     }

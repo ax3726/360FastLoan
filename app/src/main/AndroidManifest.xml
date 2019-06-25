@@ -10,8 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.AddContactInfoActivity"></activity>
-        <activity android:name=".ui.home.AddBankCardActivity" />
+        <activity android:name=".ui.home.AffirmBankActivity"></activity>
+        <activity android:name=".ui.home.AddContactInfoActivity" />
+        <activity android:name=".ui.home.AddIdCardActivity" />
 
         <meta-data
             android:name="android.max_aspect"
