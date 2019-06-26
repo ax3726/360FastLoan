@@ -18,7 +18,7 @@ import com.lm.lib_common.databinding.ComonTarbarLayoutBinding;
  */
 
 public class TitleBarLayout extends LinearLayout {
-    private Context mContext = null;
+    private Context                  mContext = null;
     private ComonTarbarLayoutBinding mBinding;
 
     public TitleBarLayout(Context context) {
@@ -39,9 +39,11 @@ public class TitleBarLayout extends LinearLayout {
             mBinding.viewHead.setBackgroundResource(R.color.colorbackground);
         }
     }
+
     public TextView getTitleView() {
-      return  mBinding.tvTitle;
+        return mBinding.tvTitle;
     }
+
     /**
      * 设置标题
      */
@@ -103,6 +105,12 @@ public class TitleBarLayout extends LinearLayout {
         mBinding.llyMore.setVisibility(bl ? VISIBLE : GONE);
     }
 
+    /**
+     * 设置是否显示底部线条
+     */
+    public void setLineShow(boolean bl) {
+        mBinding.vieLine.setVisibility(bl ? VISIBLE : GONE);
+    }
 
     /**
      * 设置左边的点击事件

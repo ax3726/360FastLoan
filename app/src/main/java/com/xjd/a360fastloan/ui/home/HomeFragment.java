@@ -1,5 +1,7 @@
 package com.xjd.a360fastloan.ui.home;
 
+import android.view.View;
+
 import com.lm.lib_common.base.BaseFragment;
 import com.lm.lib_common.base.BaseFragmentPresenter;
 import com.xjd.a360fastloan.R;
@@ -22,8 +24,32 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
     }
 
     @Override
+
     protected void initData() {
         super.initData();
+
+
+    protected boolean isTitleBar() {
+        return true;
+    }
+
+    @Override
+    protected void initTitleBar() {
+        super.initTitleBar();
+        mTitleBarLayout.setLeftShow(false);
+        mTitleBarLayout.setLineShow(false);
+        mTitleBarLayout.setTitle("360极速借");
+    }
+
+    @Override
+    protected void initEvent() {
+        super.initEvent();
+        mBinding.btnLoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(AddIdCardActivity.class);
+            }
+        });
 
     }
 }

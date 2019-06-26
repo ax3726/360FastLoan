@@ -10,11 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.AffirmBankActivity"></activity>
+        <activity android:name=".ui.home.AddContactInfoActivity" />
+        <activity android:name=".ui.home.AddIdCardActivity" />
+
         <meta-data
             android:name="android.max_aspect"
             android:value="2.1" />
-        <activity android:name=".ui.mian.LoginActivity"></activity>
 
+        <activity android:name=".ui.mian.LoginActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -26,19 +30,16 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".ui.mian.SplashActivity"
-            android:theme="@style/SplashTheme"
-            >
-
+        <activity
+            android:name=".ui.mian.SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.mian.MainActivity">
-
-        </activity>
+        <activity android:name=".ui.mian.MainActivity" />
     </application>
 
 </manifest>
