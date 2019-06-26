@@ -20,4 +20,10 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
     protected BaseFragmentPresenter createPresenter() {
         return null;
     }
+
+    @Override
+    protected void initData() {
+        super.initData();
+
+    }
 }
