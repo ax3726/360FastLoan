@@ -2,6 +2,7 @@ package com.lm.lib_common.widget;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -49,6 +50,15 @@ public class TitleBarLayout extends LinearLayout {
      */
     public void setTitle(String title) {
         mBinding.tvTitle.setText(title);
+    }
+
+    /**
+     * 设置背景
+     */
+    public void setLayoutcolor(String title) {
+       mBinding.viewHead.setBackgroundColor(Color.parseColor(title));
+        mBinding.llyHead.setBackgroundColor(Color.parseColor(title));
+        mBinding.vieLine.setVisibility(GONE);
     }
 
     /**

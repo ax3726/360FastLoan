@@ -28,7 +28,7 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
     protected void initData() {
         super.initData();
 
-
+    }
     protected boolean isTitleBar() {
         return true;
     }
