@@ -13,6 +13,7 @@
         <activity android:name=".ui.home.SmartRecommendActivity"></activity>
         <activity android:name=".ui.home.CreditAssessActivity" />
         <activity android:name=".ui.home.AffirmBankActivity" />
+
         <activity android:name=".ui.home.AddContactInfoActivity" />
         <activity android:name=".ui.home.AddIdCardActivity" />
 
@@ -42,6 +43,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.mian.MainActivity" />
+        <activity android:name=".ui.mine.AboutActivity" />
+        <activity android:name=".ui.mine.RechageActivity" />
+        <activity android:name=".ui.mine.ProposalActivity" />
+        <activity android:name=".ui.mine.PersonalActivity" />
+        <activity android:name=".ui.mine.BaiseInformationActivity" />
+        <activity android:name=".ui.mine.JobInformationActivity" />
+        <activity android:name=".ui.mine.LinkmanActivity" />
+        <activity android:name=".ui.mine.AccountActivity" />
+        <activity android:name=".ui.mine.AddBankCardActivity" />
+        <activity android:name=".ui.mine.BankcardActivity"></activity>
     </application>
 
 </manifest>

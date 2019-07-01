@@ -24,6 +24,11 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
     }
 
     @Override
+
+    protected void initData() {
+        super.initData();
+
+    }
     protected boolean isTitleBar() {
         return true;
     }
@@ -45,5 +50,6 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
                 startActivity(AddIdCardActivity.class);
             }
         });
+
     }
 }
