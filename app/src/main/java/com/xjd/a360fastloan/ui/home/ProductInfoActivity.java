@@ -8,6 +8,7 @@ import com.lm.lib_common.base.BaseActivity;
 import com.lm.lib_common.base.BasePresenter;
 import com.xjd.a360fastloan.R;
 import com.xjd.a360fastloan.databinding.ActivityProductInfoBinding;
+import com.xjd.a360fastloan.ui.mian.MainActivity;
 
 public class ProductInfoActivity extends BaseActivity<BasePresenter, ActivityProductInfoBinding> {
 
@@ -38,6 +39,8 @@ public class ProductInfoActivity extends BaseActivity<BasePresenter, ActivityPro
         mBinding.tvLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                startActivity(MainActivity.class);
             }
         });
     }

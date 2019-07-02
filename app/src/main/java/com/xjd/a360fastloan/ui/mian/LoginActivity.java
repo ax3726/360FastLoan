@@ -33,6 +33,7 @@ public class LoginActivity extends BaseActivity<BasePresenter, ActivityLoginBind
             @Override
             public void onClick(View v) {
                 startActivity(MainActivity.class);
+                finish();
             }
         });
     }
