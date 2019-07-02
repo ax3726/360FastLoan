@@ -96,8 +96,8 @@
             android:layout_below="@id/tv_01"
             android:layout_toRightOf="@id/tv_04"
             android:background="@drawable/grid_shap_two"
-            android:layout_width="30dp"
-            android:layout_height="25dp" />
+            android:layout_width="130px"
+            android:layout_height="38px" />
         </RelativeLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -133,7 +133,6 @@
                     android:layout_height="match_parent"
                     android:divider="#f9f9f9"
                     android:dividerHeight="1dp"
-                    android:paddingRight="20dp"
                     android:paddingTop="15dp">
                 </com.lm.lib_common.view.NoScrollListView>
             </LinearLayout>

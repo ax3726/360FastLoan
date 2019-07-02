@@ -81,8 +81,8 @@
                 android:text="审核中"
                 android:textColor="#e2e5e9"
                 android:textSize="10sp"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
+                android:layout_width="120px"
+                android:layout_height="120px" />
             <!--<Button-->
                 <!--android:textColor="@color/colorText"-->
                 <!--android:textSize="10sp"-->
@@ -125,7 +125,6 @@
                 android:layout_height="match_parent"
                 android:divider="#f9f9f9"
                 android:dividerHeight="1dp"
-                android:paddingRight="20dp"
                 android:paddingTop="15dp">
             </com.lm.lib_common.view.NoScrollListView>
             </LinearLayout>
