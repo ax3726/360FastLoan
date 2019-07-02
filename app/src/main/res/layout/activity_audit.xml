@@ -91,10 +91,10 @@
             android:textColor="@color/colorText"
             android:textSize="10sp"
             android:text="申请退款"
-            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20px"
             android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
             android:layout_below="@id/tv_01"
-            android:layout_toRightOf="@id/tv_04"
             android:background="@drawable/grid_shap_two"
             android:layout_width="130px"
             android:layout_height="38px" />

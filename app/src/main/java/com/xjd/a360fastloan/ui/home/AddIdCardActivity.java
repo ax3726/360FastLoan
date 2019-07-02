@@ -5,7 +5,6 @@ import android.view.KeyEvent;
 import android.view.View;
 
 import com.bumptech.glide.Glide;
-import com.lm.lib_common.base.BaseActivity;
 import com.lm.lib_common.base.BasePresenter;
 import com.lm.lib_common.utils.dialog.MyItemDialogListener;
 import com.lm.lib_common.utils.dialog.StytledDialog;
@@ -134,11 +133,11 @@ public class AddIdCardActivity extends PhotoActivity<BasePresenter, ActivityAddI
     @Override
     public void photoSuccess(String path, File file, int... queue) {
         if (!TextUtils.isEmpty(path)) {
-            if (mType == 0) {
-                Glide.with(aty).load(file).into(mBinding.imgJust);
-            } else {
-                Glide.with(aty).load(file).into(mBinding.imgBack);
-            }
+//            if (mType == 0) {
+//                Glide.with(aty).load(file).into(mBinding.imgJust);
+//            } else {
+//                Glide.with(aty).load(file).into(mBinding.imgBack);
+//            }
         }
     }
 
