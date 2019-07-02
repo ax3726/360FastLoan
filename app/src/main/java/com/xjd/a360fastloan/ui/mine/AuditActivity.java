@@ -1,6 +1,5 @@
 package com.xjd.a360fastloan.ui.mine;
 
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 import com.lm.lib_common.base.BaseActivity;
 import com.lm.lib_common.base.BasePresenter;
 import com.xjd.a360fastloan.R;
+import com.xjd.a360fastloan.databinding.ActivityAuditBinding;
 import com.xjd.a360fastloan.databinding.ActivityOrderBinding;
 
 import java.util.ArrayList;
@@ -20,15 +20,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class OrderActivity extends BaseActivity<BasePresenter,ActivityOrderBinding> {
-
-
+public class AuditActivity extends BaseActivity<BasePresenter,ActivityAuditBinding> {
 
 
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_order;
+        return R.layout.activity_audit;
     }
 
     @Override
@@ -44,7 +42,7 @@ public class OrderActivity extends BaseActivity<BasePresenter,ActivityOrderBindi
     @Override
     protected void initTitleBar() {
         super.initTitleBar();
-        mTitleBarLayout.setTitle("订单列表");
+        mTitleBarLayout.setTitle("审核流程");
     }
 
     private Myadapter myadapter;
@@ -101,12 +99,12 @@ public class OrderActivity extends BaseActivity<BasePresenter,ActivityOrderBindi
           Myadapter.Myholder myholder;
             if (convertView == null) {
                 myholder = new Myadapter.Myholder();
-                convertView = LayoutInflater.from(OrderActivity.this).inflate(R.layout.selectorderlistviewlay, null);
+                convertView = LayoutInflater.from(AuditActivity.this).inflate(R.layout.selectorderlistviewlay, null);
                 myholder.img = (ImageView) convertView.findViewById(R.id.image_01);
                 myholder.tv1 = (TextView) convertView.findViewById(R.id.tv_01);
                 convertView.setTag(myholder);
             } else {
-                myholder = (OrderActivity.Myadapter.Myholder) convertView.getTag();
+                myholder = (Myadapter.Myholder) convertView.getTag();
             }
 
 
@@ -123,5 +121,4 @@ public class OrderActivity extends BaseActivity<BasePresenter,ActivityOrderBindi
         }
 
     }
-
 }

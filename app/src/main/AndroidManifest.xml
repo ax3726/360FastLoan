@@ -10,6 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.ProductInfoActivity" />
+        <activity android:name=".ui.home.SmartRecommendActivity" />
+        <activity android:name=".ui.home.CreditAssessActivity" />
         <activity android:name=".ui.home.AffirmBankActivity" />
         <activity android:name=".ui.home.AddContactInfoActivity" />
         <activity android:name=".ui.home.AddIdCardActivity" />
@@ -39,7 +42,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.mian.MainActivity" />
+        <activity
+            android:name=".ui.mian.MainActivity"
+            android:launchMode="singleTask" />
         <activity android:name=".ui.mine.AboutActivity" />
         <activity android:name=".ui.mine.RechageActivity" />
         <activity android:name=".ui.mine.ProposalActivity" />
@@ -50,7 +55,8 @@
         <activity android:name=".ui.mine.AccountActivity" />
         <activity android:name=".ui.mine.AddBankCardActivity" />
         <activity android:name=".ui.mine.BankcardActivity" />
-        <activity android:name=".ui.mine.OrderActivity"></activity>
+        <activity android:name=".ui.mine.OrderActivity" />
+        <activity android:name=".ui.mine.AuditActivity"></activity>
     </application>
 
 </manifest>

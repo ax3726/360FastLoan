@@ -24,11 +24,11 @@ public class HomeFragment extends BaseFragment<BaseFragmentPresenter, FragmentHo
     }
 
     @Override
-
     protected void initData() {
         super.initData();
 
     }
+    @Override
     protected boolean isTitleBar() {
         return true;
     }
