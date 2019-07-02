@@ -4,6 +4,7 @@ import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
+import android.view.View;
 import android.widget.TextView;
 
 import com.lm.lib_common.adapters.recyclerview.CommonAdapter;
@@ -41,6 +42,12 @@ public class SmartRecommendActivity extends BaseActivity<BasePresenter, Activity
     @Override
     protected void initEvent() {
         super.initEvent();
+        mBinding.tvLoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ProductInfoActivity.class);
+            }
+        });
         mBinding.tvContent.setText("1. 速贷种类每次只可选择一件产品\n2. 推荐产品年化率10%-35%\n3. 放款失败我们将服务费以借币的形式退还到您的钱包\n4.以上产品均为第三方提供");
     }
 
@@ -55,7 +62,7 @@ public class SmartRecommendActivity extends BaseActivity<BasePresenter, Activity
             @Override
             protected void convert(ViewHolder holder, String s, int position) {
 
-                TextView tv_money_old=holder.getView(R.id.tv_money_old);
+                TextView tv_money_old = holder.getView(R.id.tv_money_old);
                 tv_money_old.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
             }
         };

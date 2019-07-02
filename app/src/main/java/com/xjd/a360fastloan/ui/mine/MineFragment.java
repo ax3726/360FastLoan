@@ -11,6 +11,7 @@ import com.lm.lib_common.utils.dialog.StytledDialog;
 import com.xjd.a360fastloan.R;
 import com.xjd.a360fastloan.databinding.FragmentHomeBinding;
 import com.xjd.a360fastloan.databinding.FragmentMineBinding;
+import com.xjd.a360fastloan.ui.mian.LoginActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,9 +44,8 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
                 StytledDialog.showBottomItemDialog(getActivity(), strings, "安全退出", true, true, new MyItemDialogListener() {
                     @Override
                     public void onItemClick(String text, int position) {
-                        showToast(text+position);
-                        switch (position)
-                        {
+                        showToast(text + position);
+                        switch (position) {
                             case 0:
 
                                 break;
@@ -91,6 +91,12 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
             @Override
             public void onClick(View v) {
                 startActivity(AboutActivity.class);
+            }
+        });
+        mBinding.tvLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(LoginActivity.class);
             }
         });
     }
