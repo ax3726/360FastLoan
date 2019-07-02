@@ -50,6 +50,7 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
 
                                 break;
                             case 1:
+
                                 break;
                         }
                     }
@@ -70,7 +71,6 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
         mBinding.tv02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(AccountActivity.class);
             }
 
@@ -78,7 +78,7 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
         mBinding.tv03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(BankcardActivity.class);
+                startActivity(OrderActivity.class);
             }
         });
         mBinding.tv05.setOnClickListener(new View.OnClickListener() {

@@ -49,7 +49,8 @@
         <activity android:name=".ui.mine.LinkmanActivity" />
         <activity android:name=".ui.mine.AccountActivity" />
         <activity android:name=".ui.mine.AddBankCardActivity" />
-        <activity android:name=".ui.mine.BankcardActivity"></activity>
+        <activity android:name=".ui.mine.BankcardActivity" />
+        <activity android:name=".ui.mine.OrderActivity"></activity>
     </application>
 
 </manifest>
