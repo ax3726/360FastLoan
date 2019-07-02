@@ -43,6 +43,7 @@
 
 
             <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/fly_just"
                 android:layout_width="310px"
                 android:layout_height="222px"
                 android:background="@mipmap/bank_just_icon">
@@ -62,9 +63,16 @@
                     android:textColor="@color/color666666"
                     android:textSize="28px" />
 
+                <ImageView
+                    android:id="@+id/img_just"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
             </com.zhy.autolayout.AutoFrameLayout>
 
             <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/fly_back"
                 android:layout_width="310px"
                 android:layout_height="222px"
                 android:layout_alignParentRight="true"
@@ -79,6 +87,12 @@
                     android:text="拍摄国徽面"
                     android:textColor="@color/color666666"
                     android:textSize="28px" />
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
 
             </com.zhy.autolayout.AutoFrameLayout>
 
