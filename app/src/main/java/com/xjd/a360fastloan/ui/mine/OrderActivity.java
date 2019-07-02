@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,7 +72,12 @@ public class OrderActivity extends BaseActivity<BasePresenter,ActivityOrderBindi
         myadapter = new Myadapter(mydata);
         mBinding.banklist.setAdapter(myadapter);
 
-
+       mBinding.banklist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           @Override
+           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               startActivity(AuditActivity.class);
+           }
+       });
     }
 
     public class Myadapter extends BaseAdapter {
@@ -108,11 +114,13 @@ public class OrderActivity extends BaseActivity<BasePresenter,ActivityOrderBindi
             } else {
                 myholder = (OrderActivity.Myadapter.Myholder) convertView.getTag();
             }
-
-
-
-
             myholder.tv1.setText(data.get(position).get("tv1").toString());
+            myholder.img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(AuditActivity.class);
+                }
+            });
             return convertView;
         }
 

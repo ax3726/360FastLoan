@@ -1,8 +1,10 @@
 package com.xjd.a360fastloan.ui.mine;
 
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.View;
 
+import com.bumptech.glide.Glide;
 import com.lling.photopicker.PhotoPickerActivity;
 import com.lm.lib_common.base.BaseFragment;
 import com.lm.lib_common.base.BaseFragmentPresenter;
@@ -13,6 +15,7 @@ import com.xjd.a360fastloan.databinding.FragmentHomeBinding;
 import com.xjd.a360fastloan.databinding.FragmentMineBinding;
 import com.xjd.a360fastloan.ui.mian.LoginActivity;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,10 +50,10 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
                         showToast(text + position);
                         switch (position) {
                             case 0:
-
+//                                doPhoto();
                                 break;
                             case 1:
-
+//                                pickphoto();
                                 break;
                         }
                     }
@@ -78,7 +81,8 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
         mBinding.tv03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(AuditActivity.class);
+
+                startActivity(OrderActivity.class);
             }
         });
         mBinding.tv05.setOnClickListener(new View.OnClickListener() {
@@ -100,4 +104,21 @@ public class MineFragment extends BaseFragment<BaseFragmentPresenter, FragmentMi
             }
         });
     }
+
+
+//    @Override
+//    public void photoSuccess(String path, File file, int... queue) {
+//        if (!TextUtils.isEmpty(path)) {
+////            if (mType == 0) {
+////                Glide.with(aty).load(file).into(mBinding.imgJust);
+////            } else {
+////                Glide.with(aty).load(file).into(mBinding.imgBack);
+////            }
+//        }
+//    }
+//
+//    @Override
+//    public void photoFaild() {
+//
+//    }
 }

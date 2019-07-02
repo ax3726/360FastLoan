@@ -125,6 +125,7 @@
                 android:layout_height="match_parent"
                 android:divider="#f9f9f9"
                 android:dividerHeight="1dp"
+                android:clickable="true"
                 android:paddingTop="15dp">
             </com.lm.lib_common.view.NoScrollListView>
             </LinearLayout>

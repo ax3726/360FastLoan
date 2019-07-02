@@ -133,11 +133,11 @@ public class AddIdCardActivity extends PhotoActivity<BasePresenter, ActivityAddI
     @Override
     public void photoSuccess(String path, File file, int... queue) {
         if (!TextUtils.isEmpty(path)) {
-//            if (mType == 0) {
-//                Glide.with(aty).load(file).into(mBinding.imgJust);
-//            } else {
-//                Glide.with(aty).load(file).into(mBinding.imgBack);
-//            }
+            if (mType == 0) {
+                Glide.with(aty).load(file).into(mBinding.imgJust);
+            } else {
+                Glide.with(aty).load(file).into(mBinding.imgBack);
+            }
         }
     }
 
