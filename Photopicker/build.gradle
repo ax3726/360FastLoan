@@ -6,7 +6,6 @@ dependencies {
 
 android {
     compileSdkVersion build_versions.compile_sdk
-    buildToolsVersion build_versions.build_tools
 
 
     sourceSets {
